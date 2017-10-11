@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<style type="text/css">
+		button{
+			width: 50px;
+			height: 50px;
+			text-align: center;
+		}
+		#result{
+			font-size: 2em;
+			text-align: right;
+		}
+	</style>
+	<script type="text/javascript">
+		var str;
+		var result;
+		//将数据保存到字符串中
+		function calculate(numStr){
+			str=document.getElementById("result");
+			str.innerHTML=str.innerHTML+numStr;	
+		}
+		//打印结果
+		function printResult(){
+			str=document.getElementById("result");
+			result=eval(str.innerHTML);
+			str.innerHTML=result;
+		}
+		//清除
+		function clearNum(){
+			str=document.getElementById("result");
+			str.innerHTML=null;
+		}
+	</script>
+</head>
+<body>
+	<table border="1px" cellpadding="5px" cellspacing="3px" align="center">
+		<tr>
+			<td colspan="3" id="result" value="result"></td>			
+			<td><button value="C" id="C" onclick="clearNum()">C</button></td>		
+		</tr>
+		<tr>
+			<td><button value="1" id="1" onclick="calculate(1)">1</button></td>
+			<td><button value="2" id="2" onclick="calculate(2)">2</button></td>
+			<td><button value="3" id="3" onclick="calculate(3)">3</button></td>
+			<td><button value="+" id="+" onclick="calculate('+')">+</button></td>			
+		</tr>
+		<tr>
+			<td><button value="4" id="4" onclick="calculate(4)">4</button></td>
+			<td><button value="5" id="5" onclick="calculate(5)">5</button></td>
+			<td><button value="6" id="6" onclick="calculate(6)">6</button></td>
+			<td><button value="-" id="-" onclick="calculate('-')">-</button></td>			
+		</tr>
+		<tr>
+			<td><button value="7" id="7" onclick="calculate(7)">7</button></td>
+			<td><button value="8" id="8" onclick="calculate(8)">8</button></td>
+			<td><button value="9" id="9" onclick="calculate(9)">9</button></td>
+			<td><button value="*" id="*" onclick="calculate('*')">*</button></td>			
+		</tr>
+		<tr>
+			<td><button value="0" id="0" onclick="calculate(0)">0</button></td>
+			<td><button value="." id="." onclick="calculate('.')">.</button></td>
+			<td><button value="=" id="=" onclick="printResult()">=</button></td>
+			<td><button value="/" id="/" onclick="calculate('/')">/</button></td>			
+		</tr>
+	</table>
+</body>
+</html>
