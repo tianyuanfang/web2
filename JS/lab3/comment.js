@@ -12,7 +12,7 @@ function starPic(i)
 	}
 }	
 function hide(i)
-{
+{		
 	if(con==false)
 	{
 		document.getElementById("textarea").value=null;
@@ -20,26 +20,25 @@ function hide(i)
 		{
 			arr1[k].src="images/star0.png";			
 		}
-	}
-	else
-		return con=true;	
+	}	
 }
 function qd(i)
-{
+{	
+	con=true;
 	if(con==true)
 	{
-		for(var j=0;j<=i;j++)
-	   {
-		document.getElementById("textarea").value=arr[i];		
-		arr1[j].src="images/star2.png";
-		if(i<2)
-			arr1[j].src="images/star1.png";	 
-		for(var m=i+1;m<5;m++)
-				arr1[m].src="images/star0.png";		
-	  }
-	}
-	else
-		return con=false;
+		for(var j=0;j<arr1.length;j++)
+		{
+			if(j<=i)
+				{
+					arr1[j].src="images/star2.png";
+					if(i<2)
+						arr1[j].src="images/star1.png";	
+				}	
+			else
+				arr1[j].src="images/star0.png";
+		}
+	}	
 }
 
 
