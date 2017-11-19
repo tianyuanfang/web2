@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>商品评分</title>
+	<style type="text/css">
+		div{
+			width: 500px;			
+			margin: 5px;				
+		}		
+		#one{
+			background-image: url(images/bg.jpg);
+			padding: 5px;			
+		}		
+		#textarea{
+			width: 500px;
+			height: 300px;
+		}
+		#float{
+			float: right;
+			color: gray;
+		}
+	</style>
+	
+</head>
+<body>
+	<div id="wrap">
+		<div id="one">
+			<span>宝贝与描述相符（打分匿名）</span>
+		</div>
+		<div id="two">
+			<img src="images/star0.png" onmouseover="starPic(0)" onmouseout="hide(0); return con=false;" onclick="qd(0);return con=true;" />&nbsp;
+			<img src="images/star0.png" onmouseover="starPic(1)" onmouseout="hide(1);return con=false;" onclick="qd(1);return con=true;"/>&nbsp;
+			<img src="images/star0.png" onmouseover="starPic(2)" onmouseout="hide(2);return con=false;" onclick="qd(2);return con=true;"/>&nbsp;
+			<img src="images/star0.png" onmouseover="starPic(3)" onmouseout="hide(3);return con=false;" onclick="qd(3);return con=true;"/>&nbsp;
+			<img src="images/star0.png" onmouseover="starPic(4)" onmouseout="hide(4);return con=false;" onclick="qd(4);return con=true;"/>&nbsp;
+		</div>
+		<div id="three">
+			<textarea id="textarea"></textarea>
+		</div>
+		<div id="four">
+			<select id="float">
+				<option>公开评论</option>
+			</select>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="comment.js">	
+</script>
+</html>
