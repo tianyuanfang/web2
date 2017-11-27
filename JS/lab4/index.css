@@ -1,0 +1,8 @@
+#picScroll{
+	margin: 0 auto;
+	white-space: nowrap;/*设置文本不换行*/
+	overflow:hidden;/*设置溢出元素的元素隐藏起来*/
+	width:1250px;/*设置最外层元素的宽度*/
+}
+
+	 		
