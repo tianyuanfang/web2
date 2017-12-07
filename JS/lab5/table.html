@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<table width="1000px" border="1">
+		<tr height="30px">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;"/>
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;"/>
+</body>
+<script type="text/javascript">
+	var add=document.getElementById('add'); 
+	var del=document.getElementById("delete");	
+	
+	add.onclick=function()
+	{
+	  var tr=document.createElement('tr');	 
+	  var table=document.getElementsByTagName('table')[0];
+	  var parent=table.appendChild(tr);
+	  for(var i=0;i<12;i++)
+	  {
+	  	 var td=document.createElement('td');
+	  	 parent.appendChild(td);	  		
+	  }
+	  table.border="1px";
+	  
+	  var trs=document.getElementsByTagName('tr');		
+	  for(var i=0;i<trs.length;i++)
+	  {
+		    trs[i].onmouseover=function()
+			{
+				this.style.background="yellow";
+			}
+			trs[i].onmouseout=function()
+			{
+				this.style.background=null;
+			}
+      }
+	}
+
+	del.onclick=function()
+	{  	   
+	   var table=document.getElementsByTagName('table')[0];
+	   var tr=table.lastChild;
+	   if(tr==null)
+	   {
+		   	table.border="0px";
+		   	return false;
+	   }	   	
+	   table.removeChild(tr);	  
+	}   
+
+	var trs=document.getElementsByTagName('tr');		
+	  for(var i=0;i<trs.length;i++)
+	  {
+		    trs[i].onmouseover=function()
+			{
+				this.style.background="yellow";
+			}
+			trs[i].onmouseout=function()
+			{
+				this.style.background=null;
+			}
+      }
+</script>
+</html>
