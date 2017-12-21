@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	 <script src="js/jquery-3.2.1.slim.min.js"></script>
+	 <script type="text/javascript">
+	 	$(function(){
+	 		$("tr:odd").css("background-color","gray");
+	 	})
+	 </script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var trs=document.getElementsByTagName('tr');
+			for(var i=0;i<trs.length;i++)
+			{
+				if(i%2==1)
+					trs[i].style.backgroundColor="gray";
+			}		
+		}
+	</script>
+</head>
+<body>
+	<table border="1px" width="200px" height="200px">
+		<tr><td></td><td></td></tr>
+		<tr><td></td><td></td></tr>
+		<tr><td></td><td></td></tr>
+		<tr><td></td><td></td></tr>
+	</table>
+</body>
+</html>
