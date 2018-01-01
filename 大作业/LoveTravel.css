@@ -1,0 +1,190 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+ul{	
+	list-style-type: none;
+}
+a:link{
+	text-decoration: none;	
+}
+a:hover{
+	text-decoration: underline;
+}
+/*导航栏*/
+#wrap{
+	background-color:#585153;
+	height: 80px;
+}
+#div1{
+	margin-top: 13px;
+	margin-left: 15px;
+	float: left;
+	font-size: 2em;
+	color: white;
+}
+#nav {				
+	line-height: 80px; 
+	list-style-type: none; 
+	background: #585153;
+}					
+#nav a:link {
+	display: block; 
+	width: 120px;
+	text-align: center;
+	color:white;
+	text-decoration: none;
+}					
+#nav a:hover {	
+	text-decoration: underline;
+	font-weight: bold;
+	background:	#C0C0C0;
+}
+#nav li {
+	float: left; 
+	width: 120px; 
+	background: #585153;
+}					
+#nav li ul {
+	line-height: 80px;
+	list-style-type: none;
+	text-align: left;						
+	width: 120px; 						
+	display: none;
+}
+#nav li ul li{
+	float: left; 
+	width: 120px;						
+}
+#nav li ul a:link {
+	display: block; 
+	width: 90px;
+	text-align: left;				
+	color: white;
+	padding-left: 30px;
+}							
+#nav li ul a:hover {
+	color: #FF7F50;
+	text-decoration: underline;
+	font-weight: bold;
+	background: #C0C0C0;
+}
+#nav li.sfhover ul {						
+	display: block;
+	position: absolute;
+}					
+#div2{
+	float: right;	
+}
+/*轮滚*/
+#lg{	
+	width:1260px;
+	height:400px;	
+	white-space:nowrap; 	
+	overflow:hidden;	
+}
+#lg img{	
+	width: 1260px;
+	height: 400px;
+}
+/*服务优势*/
+#serve{
+	background-image: url(images/bg1.jpg);	
+	height: 550px;
+}
+#serve h1{
+	color: #585153;
+	font-size: 3em;
+	text-align: center;
+}
+.h1{
+	color: gray;
+}
+#s1,#s2,#s3,#s4{	
+	width: 480px;
+	height: 160px;
+	float: left;
+	margin: 15px;
+	margin-left: 80px;	
+}
+#one img{
+	float: left;
+	width: 160px;
+	height: 160px;	
+}
+#two{	
+	float: right;
+	width: 300px;
+	font-size:1.2em;	
+}
+/*文字*/
+#word{
+	background-image: url(images/bg2.png);	
+	color: white;
+	width: 1260px;
+	height: 350px;		
+}
+#word h1{
+	text-align: center;	
+	margin-bottom: 15px;
+}
+#word h4{
+	margin-left: 700px;
+	margin-bottom: 15px;
+}
+#word p{
+	color: #A9A9A9;
+	text-align: justify;
+	margin-left: 260px;
+	margin-bottom: 5px;
+}
+/*旅途行摄*/
+#pic{
+	background-color: #F4A460;
+	height: 500px;
+}
+#pic h1{
+	font-size: 3em;
+	text-align: center;
+	color: white;
+}
+#pic1,#pic2,#pic3,#pic4{
+	float: left;
+	border: 1px solid white;	
+	margin: 20px;	
+	line-height: 20px;
+	background-color: white;
+	color: #585153;	
+}
+#pic1{
+	margin-left: 320px;	
+}
+#pic4{
+	margin-right: 100px;
+}
+#pic5{
+	margin-left: 180px;
+}
+#pic5 img{
+	width: 900px;
+	height: 200px;
+	float: left;	
+}
+#pic a:link{
+	display: block;
+	padding: 20px;	
+	color: #585153;
+}
+#pic a:hover{
+	line-height: 20px;
+	display: block;	
+	text-decoration: none;	
+	padding: 20px;	
+}
+/*底部*/
+#bottom p{
+	text-align: center;
+	background-color: #585153;
+	height: 65px;
+	padding-top: 40px;
+}
